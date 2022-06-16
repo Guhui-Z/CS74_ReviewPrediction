@@ -17,7 +17,7 @@ Code for data exploration, preprocessing, different pipeline approaches to predi
 - ‘reviewText’ and ‘summary’:
     - squared (VADER sentiment analysis scores + 1)
 - ‘review-count’
-    number of reviews per product!
+    - number of reviews per product!
 
 ### Model
 
