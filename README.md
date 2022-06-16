@@ -21,7 +21,7 @@ Code for data exploration, preprocessing, different pipeline approaches to predi
 
 ### Model
 
-XGBoostClassifier with eighted F1 10-fold cross validation: 0.76
+XGBoostClassifier with weighted F1 10-fold cross validation: 0.76
 
 ### Instructions
 `third_iteration_model.py` contains our final model's code. Please see the file for detailed documentation.
