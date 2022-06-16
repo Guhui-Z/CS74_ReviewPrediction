@@ -1,8 +1,27 @@
-# CS74 Project - Intermediate Results
+# Amazon Review Prediction Project
 ## Joseph Januszewicz, Josephine (Mien) Nguyen, Guhui Zhang
 
 ### Description
-Code for data exploration, preprocessing, different pipeline approaches to predict whether a product is awesome or not, defined as whether its average review > 4.5 stars.
+Code for data exploration, preprocessing, different pipeline approaches to predict whether an Amazon product is awesome or not, defined as whether its average review > 4.5 stars.
+
+*Note: as this repo is made public, it does not contain the datasets for privacy concerns.*
+
+### Feature Engineering
+
+- ‘reviewText’ and ‘summary’:
+    -  TF-IDF vectorizer; weighs ‘summary’ higher by concatenating it to the `reviewText` 5 times
+- ‘view-buy’:
+    - length of ‘buy_after_viewing’ in ‘related’
+- ‘root-genre’:
+    - binary encoding
+- ‘reviewText’ and ‘summary’:
+    - squared (VADER sentiment analysis scores + 1)
+- ‘review-count’
+    number of reviews per product!
+
+### Model
+
+XGBoostClassifier with eighted F1 10-fold cross validation: 0.76
 
 ### Instructions
 `third_iteration_model.py` contains our final model's code. Please see the file for detailed documentation.
